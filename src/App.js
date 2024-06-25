@@ -18,16 +18,19 @@ function App() {
     <Box>
       <Grid container spacing={0} >
         <Grid item md={2.5} xs={12}>
+        
           <Box
             sx={{
               backgroundImage: `url(${green})`,
               backgroundRepeat: "repeat",
               backgroundColor: "green",
               backgroundSize: "cover",
+              // backgroundAttachment:"fixed",
               overflowY: 'auto',
               minHeight: {
                 xs: "20vh", // Mobile 
-                md: "150vh", // Desktop 
+                md: "160vh", // Desktop 
+              
               },
               width:"100%",
               display: "flex",
