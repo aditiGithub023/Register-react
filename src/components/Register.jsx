@@ -208,7 +208,7 @@ function Register() {
                 value={enteredValues.email}
                 onChange={(event) => handleInput("email", event.target.value)}
                 onBlur={() => handleBlur("email")}
-                helperText={emailIsInvalid ? "Email Invalid" : " "}
+                helperText={emailIsInvalid ? "Valid Email Required" : " "}
               />
             </Grid>
             <Grid item xs={12} md={6}>
@@ -225,7 +225,7 @@ function Register() {
                 onChange={(event) => handleInput("phone", event.target.value)}
                 onBlur={() => handleBlur("phone")}
                 helperText={
-                  phoneIsInvalid ? "Error- accepts only 10 digits" : " "
+                  phoneIsInvalid ? "Accepts only 10 digits" : " "
                 }
               />
             </Grid>
@@ -277,7 +277,7 @@ function Register() {
                 value={enteredValues.bio}
                 onChange={(event) => handleInput("bio", event.target.value)}
                 onBlur={() => handleBlur("bio")}
-                helperText={bioIsInvalid ? "minimum 20 char" : " "}
+                helperText={bioIsInvalid ? "Minimum 20 char" : " "}
               />
             </Grid>
           </Grid>
